@@ -1,4 +1,4 @@
-Elements.multiFade
+Elements.multiHighlight
 ===========
 
 ![Screenshot](http://github.com/subhaze/mootools-elements-multihighlight/raw/master/logo.png)
