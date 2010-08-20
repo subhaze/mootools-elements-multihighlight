@@ -1,6 +1,8 @@
 Elements.multiFade
 ===========
 
+![Screenshot](http://github.com/subhaze/mootools-elements-multihighlight/raw/master/logo.png)
+
 Packager compatible.
 
 This plugin is based off the [Element.highlight](http://mootools.net/docs/core/Fx/Fx.Tween#Element:highlight) function but with a slight twist.
@@ -9,14 +11,11 @@ Call this method on a collection of Elements to transition their color propertie
 
 *Notice*: If the background color is transparent it will be set to white!
 
-![Screenshot](http://github.com/subhaze/mootools-elements-multihighlight/raw/master/logo.png)
-
 How to use
 ----------
 
 ###Syntax:
 
-	#JS
 	$$('.classOrSelector').multiHighlight( backgroundColor, foregroundColor, morphProps );
 
 ###Arguments:
@@ -27,7 +26,7 @@ How to use
 
 ##Examples:
 
-###JavaScript
+JavaScript
 
 	#JS
 	// Transitions current colors to supplied colors on mouseenter and back to original on mouseleave
@@ -39,7 +38,7 @@ How to use
 	// Transitions ONLY the elements background-color and applies Fx options to the transition
 	$$('.link3').multiHighlight('#eee',null, {duration:'long'});
 	
-###HTML
+HTML
 
 	#HTML
 	<div class="link-container">
