@@ -1,0 +1,16 @@
+name:     "ElementsMultiHighlight"
+
+exports:  "ElementsMultiHighlight.js"
+
+author:   "subhaze"
+
+category: "Effects"
+
+tags:     "[navigation, tween, element, effects]"
+
+demo:     ""
+
+current: "v1.0"
+
+sources:
+  - "Source/Elements.MultiHighlight.js"
