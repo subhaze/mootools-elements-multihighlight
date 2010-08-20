@@ -45,11 +45,9 @@ Elements.implement({
         
         elem.addEvents({
           'mouseenter':  function( e ) {
-            e.stop();
             e.target.morph( morphValues.mouseoverVals );
           },
           'mouseleave':   function( e ) {
-            e.stop();
             e.target.morph( morphValues.mouseoutVals );
           }
         });
