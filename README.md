@@ -16,6 +16,7 @@ How to use
 
 ###Syntax:
 
+	#JS
 	$$('.classOrSelector').multiHighlight( backgroundColor, foregroundColor, morphProps );
 
 ###Arguments:
@@ -26,7 +27,7 @@ How to use
 
 ##Examples:
 
-JavaScript
+###JavaScript
 
 	#JS
 	// Transitions current colors to supplied colors on mouseenter and back to original on mouseleave
@@ -38,7 +39,7 @@ JavaScript
 	// Transitions ONLY the elements background-color and applies Fx options to the transition
 	$$('.link3').multiHighlight('#eee',null, {duration:'long'});
 	
-HTML
+###HTML
 
 	#HTML
 	<div class="link-container">
