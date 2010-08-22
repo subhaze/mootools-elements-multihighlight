@@ -24,8 +24,9 @@ Elements.implement({
     if( morphProps )  this.set( 'morph', morphProps );
     this.each( function( elem ) {
       (function(){
+        var bgColor = elem.getStyle( 'background-color' );
         var mouseoutVals = {
-          'background-color': ( elem.getStyle('background-color') != 'transparent')?elem.getStyle('background-color'):'#fff',
+          'background-color': ( bgColor != 'transparent') ? bgColor : '#fff',
           'color':            elem.getStyle('color')
         };
         elem.addEvents({
