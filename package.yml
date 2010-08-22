@@ -8,9 +8,9 @@ category: "Effects"
 
 tags:     "[navigation, tween, element, effects]"
 
-demo:     "http://mootools.net/shell/KBT4N/"
+demo:     "http://mootools.net/shell/6suwR/"
 
-current: "v1.0"
+current: "v1.1"
 
 sources:
   - "Source/Elements.MultiHighlight.js"

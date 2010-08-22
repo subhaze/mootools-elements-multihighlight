@@ -19,40 +19,25 @@ authors: [Michael Russell]
 */
 
 Elements.implement({
-
-	multiHighlight: function( backgroundColor, foregroundColor, morphProps ) {
-    var morphValues = {};
-        morphValues.mouseoverVals = {},
-        morphValues.mouseoutVals  = {};
-	  
-	  if( backgroundColor || foregroundColor ) {
-	    this.each( function( elem ) {
-	      
-        if( backgroundColor ) {
-          morphValues.mouseoutVals['background-color'] = ( elem.getStyle('background-color') != 'transparent' ) 
-          ? elem.getStyle('background-color') : '#fff';
-          morphValues.mouseoverVals['background-color'] = backgroundColor;
-        }
-        
-        if( foregroundColor ) {
-          morphValues.mouseoutVals['color'] = elem.getStyle('color');
-          morphValues.mouseoverVals['color'] = foregroundColor;
-        }
-        
-        if( morphProps ) {
-          elem.set( 'morph', morphProps );
-        }
-        
+  multiHighlight: function( backgroundColor, foregroundColor, morphProps ) {
+    if( !backgroundColor && ! foregroundColor ) return this;
+    if( morphProps )  this.set( 'morph', morphProps );
+    this.each( function( elem ) {
+      (function(){
+        var mouseoutVals = {
+          'background-color': ( elem.getStyle('background-color') != 'transparent')?elem.getStyle('background-color'):'#fff',
+          'color':            elem.getStyle('color')
+        };
         elem.addEvents({
           'mouseenter':  function( e ) {
-            e.target.morph( morphValues.mouseoverVals );
+            e.target.morph( {'background-color': backgroundColor,'color':foregroundColor} );
           },
           'mouseleave':   function( e ) {
-            e.target.morph( morphValues.mouseoutVals );
+            e.target.morph( mouseoutVals );
           }
         });
-        
-	    });
-	  }
-	}
+      })(); 
+    });
+    return this;
+  }
 });
