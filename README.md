@@ -6,8 +6,9 @@ Elements.multiHighlight
 Packager compatible.
 
 *Update 1:*
-Some optimizations made to underlying code, with suggestions made by [arian](http://github.com/subhaze/mootools-elements-multihighlight/commit/e3fc0283ec6bea8991a80ef3b95e169c25b0c3c3#commitcomment-132778)
-You can now have different starting styles for a collection of elements and they will morph back to their correct stylings when moused out instead of the styles of the last element in the collection.
+Some optimizations made to underlying code, with suggestions made by [arian](http://github.com/subhaze/mootools-elements-multihighlight/commit/e3fc0283ec6bea8991a80ef3b95e169c25b0c3c3#commitcomment-132778).
+
+Also, fixed an issue where all elements in a collection would morph back to the last element's style in the collection instead of its own.
 
 This plugin is based off the [Element.highlight](http://mootools.net/docs/core/Fx/Fx.Tween#Element:highlight) function but with a slight twist.
 
